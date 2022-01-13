@@ -19,6 +19,9 @@
       <% if (message != "") { %> 
         <p><%= message %></p>
       <% } %>
+      <% if (exists) { %> 
+        <p>The user already exists</p>
+      <% } %>
       <h2>Add user</h2>
       <form action="/ta02/addUser" method="post">
         <input type="text" name="name" id="name">
