@@ -16,6 +16,9 @@
       </div>
     </div>
     <div class="container">
+      <% if (message != "") { %> 
+        <p><%= message %></p>
+      <% } %>
       <h2>Add user</h2>
       <form action="/ta02/addUser" method="post">
         <input type="text" name="name" id="name">
